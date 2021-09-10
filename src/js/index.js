@@ -28,7 +28,7 @@ function mostraClima(clima) {
     resultado.innerHTML = `
     <h1>${clima.name}, ${clima.sys.country}</h1>
     <p>${diaSemana()}, Temperatura Min ${clima.main.temp_min}Cº, Temperatura Max ${clima.main.temp_max}Cº</p></br>
-    <p>Humidade: ${clima.main.humidity}%</p>
+    <p>umidade: ${clima.main.humidity}%</p>
     `
 }
 
