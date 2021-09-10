@@ -44,7 +44,14 @@ function dadosClima() {
             if (weather.status === 400) {
                 throw new Error("Bad response from server");
             }
-            return weather.json()
+
+            if (weather.status === 404) {
+                alert('Cidade não encontrada');
+            }
+
+            if (weather.status === 200) {
+                return weather.json()
+            }
 
         }).then(mostraClima);
 
