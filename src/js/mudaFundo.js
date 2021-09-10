@@ -10,11 +10,11 @@ function horaAtual() {
 function mudaFundo() {
     let hora = horaAtual();
 
-    if (hora >= 12 && hora < 18) return divImag.style.backgroundImage = 'url("./../src/img/tarde.jpg")';
+    if (hora >= 12 && hora < 18) return divImag.style.backgroundImage = 'url("./src/img/tarde.jpg")';
 
-    if (hora >= 18) return divImag.style.backgroundImage = 'url("./../src/img/desert.jpg")';
+    if (hora >= 18) return divImag.style.backgroundImage = 'url("./src/img/desert.jpg")';
 
-    if (hora >= 0 && hora < 12) return divImag.style.backgroundImage = 'url("./../src/img/manha.jpg")';
+    if (hora >= 0 && hora < 12) return divImag.style.backgroundImage = 'url("./src/img/manha.jpg")';
 }
 
 
