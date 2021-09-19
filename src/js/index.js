@@ -13,7 +13,7 @@ const api = {
 function diaSemana() {
     const data = new Date();
 
-    let dia = data.getUTCDay();
+    let dia = data.getDay();
 
     const semana = ['Domingo', 'Segunda - Feira', 'Terça - Feira', 'Quarta - Feira', 'Quinta - Feira', 'Sexta - Feira', 'Sábado'];
 
